@@ -2,19 +2,15 @@
 
 @font-face {
   font-family: Emoji;
-  src: local("Apple Color Emoji"),
-    local("Segoe UI Emoji"),
-    local("Segoe UI Symbol"),
-    local("Noto Color Emoji");
+  src: local('Apple Color Emoji'), local('Segoe UI Emoji'), local('Segoe UI Symbol'), local('Noto Color Emoji');
   unicode-range: U+1F000-1F644, U+203C-3299;
 }
 
 :root {
-  --vp-font-family-base: "LXGW WenKai", system-ui, -apple-system, Segoe UI, Roboto, Emoji, Helvetica, Arial, sans-serif;
-  --vp-font-family-mono: "LXGW WenKai Mono", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", ui-monospace, monospace;
+  --vp-font-family-base: 'LXGW WenKai', system-ui, -apple-system, Segoe UI, Roboto, Emoji, Helvetica, Arial, sans-serif;
+  --vp-font-family-mono: 'LXGW WenKai Mono', Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', ui-monospace,
+    monospace;
 }
-
-
 
 /**
  * Customize default theme styling by overriding CSS variables:
@@ -26,7 +22,7 @@
  *
  * Each colors have exact same color scale system with 3 levels of solid
  * colors with different brightness, and 1 soft color.
- * 
+ *
  * - `XXX-1`: The most solid color used mainly for colored text. It must
  *   satisfy the contrast ratio against when used on top of `XXX-soft`.
  *
@@ -110,13 +106,9 @@
 
 :root {
   --vp-home-hero-name-color: transparent;
-  --vp-home-hero-name-background: -webkit-linear-gradient(120deg,
-      #bd34fe 30%,
-      #41d1ff);
+  --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #bd34fe 30%, #41d1ff);
 
-  --vp-home-hero-image-background-image: linear-gradient(-45deg,
-      #bd34fe 50%,
-      #47caff 50%);
+  --vp-home-hero-image-background-image: linear-gradient(-45deg, #bd34fe 50%, #47caff 50%);
   --vp-home-hero-image-filter: blur(44px);
 }
 

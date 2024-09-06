@@ -1,8 +1,8 @@
 // https://vitepress.dev/guide/custom-theme
-import type { Theme, EnhanceAppContext } from 'vitepress'
+import type { EnhanceAppContext, Theme } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
 
-import MyLayout from "./components/MyLayout.vue";
+import MyLayout from './components/MyLayout.vue'
 
 import './style.css'
 
@@ -11,5 +11,5 @@ export default {
   Layout: MyLayout,
   enhanceApp({ app, router, siteData }: EnhanceAppContext) {
     // 111
-  }
+  },
 } satisfies Theme
