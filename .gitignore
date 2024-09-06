@@ -129,5 +129,4 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
-# vitepress
-*/.vitepress/cache
+*/.DS_Store
