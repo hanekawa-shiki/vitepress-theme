@@ -1,0 +1,6 @@
+[build.environment]
+  NODE_VERSION = "22"
+
+[build]
+  publish = "demo/.vitepress/dist"
+  command = "pnpm demo-build"

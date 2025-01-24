@@ -1,0 +1,67 @@
+{
+  "name": "@hanekawa-shiki/vitepress-theme",
+  "version": "0.0.1",
+  "description": "The VitePress theme for hanekawa",
+  "keywords": [
+    "vitepress-theme",
+    "design-system"
+  ],
+  "main": "src/index.ts",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./config": {
+      "types": "./src/vitepress/config/baseConfig.d.ts",
+      "default": "./src/vitepress/config/baseConfig.js"
+    },
+    "./src/*": "./src/*"
+  },
+  "files": [
+    "src",
+    "types"
+  ],
+  "author": "hanekawa-shiki",
+  "license": "MIT",
+  "homepage": "https://github.com/hanekawa-shiki/vitepress-theme#readme",
+  "bugs": {
+    "url": "https://github.com/hanekawa-shiki/vitepress-theme/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hanekawa-shiki/vitepress-theme.git"
+  },
+  "scripts": {
+    "lint": "prettier --check --write --parser typescript \"{__tests__,docs,src,types}/**/*.ts\"",
+    "lint:fail": "prettier --check --parser typescript \"{__tests__,docs,src,types}/**/*.ts\"",
+    "type": "vue-tsc --noEmit",
+    "test": "pnpm run lint && pnpm run type",
+    "dev": "vitepress dev demo",
+    "demo-build": "vitepress build demo",
+    "serve": "pnpm run demo-build && vitepress serve demo"
+  },
+  "dependencies": {
+    "@vueuse/core": "12.5.0",
+    "normalize.css": "8.0.1"
+  },
+  "devDependencies": {
+    "@mdit-vue/types": "2.1.0",
+    "@types/estree": "1.0.6",
+    "@types/node": "22.10.10",
+    "prettier": "3.4.2",
+    "typescript": "5.7.3",
+    "vitepress": "1.6.3",
+    "vue": "3.5.13",
+    "vue-tsc": "2.2.0"
+  },
+  "peerDependencies": {
+    "vitepress": "1.6.3"
+  },
+  "pnpm": {
+    "peerDependencyRules": {
+      "ignoreMissing": [
+        "@algolia/client-search"
+      ]
+    }
+  },
+  "packageManager": "pnpm@9.15.4"
+}
