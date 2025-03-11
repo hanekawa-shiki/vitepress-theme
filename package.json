@@ -40,7 +40,7 @@
     "serve": "pnpm run demo-build && vitepress serve demo"
   },
   "dependencies": {
-    "@vueuse/core": "12.5.0",
+    "@vueuse/core": "13.0.0",
     "normalize.css": "8.0.1"
   },
   "devDependencies": {
